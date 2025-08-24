@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 30px;
+    color: #4285F4;
+}
+
+.logo h1 {
+    font-size: 22px;
+    font-weight: 900;
+    font-family: fantasy;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+    align-items: center;
+}
+
+.app-icon {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.app-icon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    object-fit: cover;
+}
+
+.app-details {
+    flex: 2;
+    min-width: 300px;
+}
+
+.app-title {
+    font-size: 42px;
+    margin-bottom: 1px;
+    color: #202124;
+    font-family: fantasy;
+    margin-top:-30px;
+}
+
+.company {
+    color:#1589FF;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family:Serif;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color:green;
+}
+.spanreview-text{
+    font-size: 12px;
+    font-family: serif;
+    font-weight: 900;
+}
+.spanreview-text2{
+    font-size: 16px;
+    font-family: serif;
+    font-weight: 900;
+}
+.spanreview-text3{
+    font-size: 12px;
+    font-family: serif;
+    font-weight: 900;
+    color:orange;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #4285F4;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    min-width: 90%;
+    font-family: fantasy;
+    text-align: center;
+    border-bottom:3px solid blue;
+}
+
+.download-btn:hover {
+    background-color: #3367D6;
+}
+
+.screenshots {
+    margin: 50px 0;
+}
+
+.screenshots h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #202124;
+    font-family: fantasy;
+}
+
+.screenshot-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.screenshot {
+    flex: 0 0 auto;
+    width: 100px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+.description h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #202124;
+    font-family: fantasy;
+}
+
+.description p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #5f6368;
+    font-family: serif;;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #5f6368;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
+    font-family:fantasy;
+    margin-top: -10px;
+}
+
+.stats {
+    background-color: #f1f3f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
+
+.stats h3 {
+    margin-bottom: 15px;
+    color: #4285F4;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stat-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4285F4;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* ⭐ Review Section Styling */
+.reviews-section {
+    background:transparent;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin:-20px;
+}
+.reviews-section h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.sub-text {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.info-icon {
+    background: orange;
+    border-radius: 50%;
+    padding: 0px 5px;
+    font-size: 11px;
+    margin-left: 6px;
+}
+.rating-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rating-left {
+    width: 100px;
+    text-align: center;
+}
+.rating-score {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+.rating-stars {
+    color: #6ea0ff;
+    font-size: 18px;
+}
+.rating-count {
+    color: #aaa;
+    font-size: 14px;
+}
+.rating-bars {
+    flex: 1;
+    margin-left: 20px;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    font-size: 14px;
+}
+.bar span {
+    width: 20px;
+}
+.line {
+    background: #BCC6CC;
+    flex: 1;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+    overflow: hidden;
+}
+.fill {
+    background: #0000FF;
+    height: 100%;
+    border-radius: 5px;
+}
+.review-card {
+    border-top: 1px solid #333;
+    padding: 15px 0;
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.avatar, .avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.avatar-img {
+    object-fit: cover;
+}
+.review-name {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: fantasy;
+}
+.review-stars {
+    color: #6ea0ff;
+    font-size: 14px;
+}
+.review-date {
+    font-size: 12px;
+    color: #aaa;
+}
+.review-text {
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: black;
+    font-family: serif;
+}
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #aaa;
+}
+.helpful-btns button {
+    background: #222;
+    border: 1px solid #555;
+    color: #fff;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.helpful-btns button:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rating {
+        justify-content: center;
+    }
+    
+    .app-icon img {
+        width: 150px;
+        height: 150px;
+    }
+}
